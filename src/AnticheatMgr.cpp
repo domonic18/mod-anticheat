@@ -1655,7 +1655,7 @@ void AnticheatMgr::BuildReport(Player* player, ReportTypes reportType, Optional<
         }
     }
 
-    BuildAndSendReportToIngameGameMasters(player, reportType, optMovementInfo);
+    //BuildAndSendReportToIngameGameMasters(player, reportType, optMovementInfo);
 
     if (sConfigMgr->GetOption<bool>("Anticheat.KickPlayer", true) && m_Players[key].GetTotalReports() > sConfigMgr->GetOption<uint32>("Anticheat.ReportsForKick", 70))
     {
