@@ -1655,6 +1655,7 @@ bool AnticheatMgr::MustCheckTempReports(ReportTypes type)
 
 void AnticheatMgr::BuildReport(Player* player, ReportTypes reportType, Optional<MovementInfo> optMovementInfo)
 {
+    (void)optMovementInfo;
     OnReport(player, reportType);
     ObjectGuid key = player->GetGUID();
 
